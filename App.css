@@ -7,6 +7,10 @@
   box-sizing: border-box;
   font-family: "Plus Jakarta Sans", sans-serif;
 }
+body{
+  background: rgb(168,168,168);
+  background: linear-gradient(90deg, #a8a8a82e 0%, #ffffff 100%);
+}
 
 div.users-list {
   display: grid;
@@ -34,11 +38,25 @@ div.users-list {
 	}
 
 	100% {
-		box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+		box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 	}
 }
 
 .card {
+  display: flex;
+  background-color: #ffffff73;
+  flex-direction: column;
+  margin: 1.5rem;
+  padding: 1.2rem;
+  height: 15rem;
+  width: auto;
+  justify-content: space-between;
+  border-radius: 9px;
+  animation: ease-out all 2s;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.card:hover {
   display: flex;
   flex-direction: column;
   margin: 1.5rem;
@@ -47,8 +65,9 @@ div.users-list {
   width: auto;
   justify-content: space-between;
   border-radius: 9px;
-  animation: myAnim 1s linear 0s 1 normal forwards;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
+
 
 button {
   background-color: #d7d7d7;
@@ -60,6 +79,18 @@ button {
 
 button#submit {
   background-color: #158967;
+  border-color: #ffffffc0;
+  color: #ffffff;
+  font-size: 1.2rem;
+  width: auto;
+  padding: .4rem;
+  border: 0;
+  border-radius: 5px;
+}
+
+
+button#submit:hover {
+  background-color: #0c4433;
   border-color: #ffffffc0;
   color: #ffffff;
   font-size: 1.2rem;
@@ -111,6 +142,20 @@ button.delet-btn {
   
 }
 
+
+button.delet-btn:hover {
+  width: auto;
+  background-color: #9710109e;
+  padding:  0.9rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border: 0;
+  padding-left: 1rem;
+  border-radius: 5px;
+  
+}
+
 button.edit-btn {
   width: auto;
   height: auto;
@@ -122,6 +167,20 @@ button.edit-btn {
   padding-left: 1rem;
   border-radius: 5px;
   
+}
+
+
+button.edit-btn:hover {
+  width: auto;
+  height: auto;
+  padding: 0.9rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border: 0;
+  padding-left: 1rem;
+  border-radius: 5px;
+  background-color: #909090;;
 }
 
 .banner {
@@ -165,6 +224,16 @@ button.edit-btn {
   background-color: #158967;
   border-radius: 10px;
 }
+
+.new-user-btn:hover {
+  padding: 1rem;
+  font-size: 1.5rem;
+  border: 0;
+  color: #ffffff;
+  background-color: #0b4534;
+  border-radius: 10px;
+}
+
 
 
 .form-label {

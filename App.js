@@ -24,17 +24,17 @@ const App = () => {
   };
 
   const selectUser = (user) => {
-    setUserSeleced(user);
+    setUserSeleced(user)
   };
 
   const creatUser = () => {
-    alert("crear user");
+    alert("crear user")
   };
 
   const deselectUser = () => {
-    console.log("deseleccionado");
-    setUserSeleced(null);
-  };
+    console.log("deseleccionado")
+    setUserSeleced(null)
+  }
 
   const deleteUser = (user) => {
     axios
@@ -42,11 +42,11 @@ const App = () => {
       .then((res) => {
 
         axios.get("https://users-crud1.herokuapp.com/users/").then((res) => {
-          setUser(res.data);
-          deselectUser();
-        });
-      });
-  };
+          setUser(res.data)
+          deselectUser()
+        })
+      })
+  }
 
   const closeModal = () => setModalUser(false);
 

@@ -9,28 +9,28 @@ const UsersForm = ({
   creatUser,
   closeModal
 }) => {
-  const [name, setName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [birthday, setBirthday] = useState("");
+  const [name, setName] = useState("")
+  const [lastName, setLastName] = useState("")
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
+  const [birthday, setBirthday] = useState("")
 
   useEffect(() => {
     if (userSelected !== null) {
-      setName(userSelected.first_name);
-      setPassword(userSelected.password);
-      setLastName(userSelected.last_name);
-      setEmail(userSelected.email);
-      setBirthday(userSelected.birthday);
+      setName(userSelected.first_name)
+      setPassword(userSelected.password)
+      setLastName(userSelected.last_name)
+      setEmail(userSelected.email)
+      setBirthday(userSelected.birthday)
     } else {
-      setName("");
-      setPassword("");
-      setLastName("");
-      setEmail("");
-      setBirthday("");
+      setName("")
+      setPassword("")
+      setLastName("")
+      setEmail("")
+      setBirthday("")
     }
-  }, [userSelected]);
-
+  }, [userSelected])
+  
   const submit = (e) => {
     e.preventDefault();
     const user = {
